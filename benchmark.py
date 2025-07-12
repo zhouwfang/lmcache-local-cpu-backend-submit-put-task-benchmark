@@ -118,5 +118,4 @@ if __name__ == "__main__":
     print(f"Optimized single-item calls: {t_opt_single:.3f} seconds")
     print(f"Original batched method:      {t_orig_batched:.3f} seconds")
     print(f"Optimized batched method:     {t_opt_batched:.3f} seconds")
-    print(f"\nSpeedup for batched method: {t_orig_batched / t_opt_batched:.2f}x")
-
+    print(f"\nImprovement for batched method: {(t_orig_batched - t_opt_batched) / t_orig_batched:.2f}%")
